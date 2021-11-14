@@ -1,7 +1,7 @@
 @prefix ab: <http://www.example.org/assignment#>.
 ab:Sun ab:name "Sun".
 ab:Birds ab:name "Birds".
-ab:Mountains" ab:name "Mountains".
+ab:Mountains ab:name "Mountains".
 ab:River ab:name "River".
 ab:House ab:name "House".
 ab:Land  ab:name "Land".

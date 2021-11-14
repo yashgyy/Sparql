@@ -1,0 +1,19 @@
+@prefix ab: <http://www.example.org/assignment#> .
+
+ab:Sun ab:above ab:Mountains ;
+    ab:right-of ab:Birds .
+
+ab:Tree ab:above ab:House .
+
+ab:Birds ab:above ab:Mountains .
+
+ab:Boat ab:above ab:River .
+
+ab:Land ab:right-of ab:River .
+
+ab:House ab:above ab:Land ;
+    ab:right-of ab:Boat .
+
+ab:Mountains ab:above ab:House,
+        ab:River .
+

@@ -1,0 +1,15 @@
+@prefix ns0: <http://www.example.org/assignment#> .
+
+<http://www.example.org/assignment#Sun>
+  ns0:right-of ns0:Birds ;
+  ns0:above ns0:Mountains .
+
+ns0:Birds ns0:above ns0:Mountains .
+ns0:Mountains ns0:above ns0:River, ns0:House .
+ns0:House
+  ns0:above ns0:Land ;
+  ns0:right-of ns0:Boat .
+
+ns0:Land ns0:right-of ns0:River .
+ns0:Boat ns0:above ns0:River .
+ns0:Tree ns0:above ns0:House .

@@ -1,4 +1,4 @@
-@prefix ab: <http://www.example.org/assignment#>.
+@prefix ab: <http://www.example.org/assignment#>
 ab:Sun ab:right-of ab:Birds;
        ab:above    ab:Mountains.
 ab:Birds ab:above ab:Mountains.

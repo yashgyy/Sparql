@@ -1,39 +1,28 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:ns0="http://www.example.org/assignment#">
-
-  <rdf:Description rdf:about="http://www.example.org/assignment#Sun">
-    <ns0:right-of>
-      <rdf:Description rdf:about="http://www.example.org/assignment#Birds">
-        <ns0:above rdf:resource="http://www.example.org/assignment#Mountains"/>
-      </rdf:Description>
-    </ns0:right-of>
-
-    <ns0:above rdf:resource="http://www.example.org/assignment#Mountains"/>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:ab="http://www.example.org/assignment#" > 
+  <rdf:Description rdf:about="http://www.example.org/assignment#Birds">
+    <ab:above rdf:resource="http://www.example.org/assignment#Mountains"/>
   </rdf:Description>
-
+  <rdf:Description rdf:about="http://www.example.org/assignment#Land">
+    <ab:right-of rdf:resource="http://www.example.org/assignment#River"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.example.org/assignment#Mountains">
-    <ns0:above rdf:resource="http://www.example.org/assignment#River"/>
-    <ns0:above rdf:resource="http://www.example.org/assignment#House"/>
+    <ab:above rdf:resource="http://www.example.org/assignment#House"/>
+    <ab:above rdf:resource="http://www.example.org/assignment#River"/>
   </rdf:Description>
-
   <rdf:Description rdf:about="http://www.example.org/assignment#House">
-    <ns0:above>
-      <rdf:Description rdf:about="http://www.example.org/assignment#Land">
-        <ns0:right-of rdf:resource="http://www.example.org/assignment#River"/>
-      </rdf:Description>
-    </ns0:above>
-
-    <ns0:right-of>
-      <rdf:Description rdf:about="http://www.example.org/assignment#Boat">
-        <ns0:above rdf:resource="http://www.example.org/assignment#River"/>
-      </rdf:Description>
-    </ns0:right-of>
-
+    <ab:right-of rdf:resource="http://www.example.org/assignment#Boat"/>
+    <ab:above rdf:resource="http://www.example.org/assignment#Land"/>
   </rdf:Description>
-
+  <rdf:Description rdf:about="http://www.example.org/assignment#Boat">
+    <ab:above rdf:resource="http://www.example.org/assignment#River"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.example.org/assignment#Tree">
-    <ns0:above rdf:resource="http://www.example.org/assignment#House"/>
+    <ab:above rdf:resource="http://www.example.org/assignment#House"/>
   </rdf:Description>
-
+  <rdf:Description rdf:about="http://www.example.org/assignment#Sun">
+    <ab:above rdf:resource="http://www.example.org/assignment#Mountains"/>
+    <ab:right-of rdf:resource="http://www.example.org/assignment#Birds"/>
+  </rdf:Description>
 </rdf:RDF>

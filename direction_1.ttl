@@ -4,11 +4,7 @@ ab:Sun ab:right-of ab:Birds;
 ab:Birds ab:above ab:Mountains.
 ab:Mountains ab:above ab:River;
 	     ab:above ab:House.
-ab:House     ab:above ab:Land;
-             ab:right-of ab:Boat.
-ab:Land ab:right-of ab:River.
-ab:Boat ab:above ab:River.
-ab:Tree ab:above ab:House.
+
 
 
 

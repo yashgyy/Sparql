@@ -9,7 +9,3 @@ ab:House     ab:above ab:Land;
 ab:Land ab:right-of ab:River.
 ab:Boat ab:above ab:River.
 ab:Tree ab:above ab:House.
-
-
-
-
